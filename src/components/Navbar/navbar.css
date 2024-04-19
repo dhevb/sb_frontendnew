@@ -35,6 +35,7 @@ nav .searchbar {
   padding: 5px;
   justify-content: space-between;
   width: 50%;
+  margin-top: -15px;
 }
 
 nav .searchbar input {
