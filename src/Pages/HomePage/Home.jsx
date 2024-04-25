@@ -1,19 +1,25 @@
-import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import BannerSlider from '../../components/Banners/BannerSlider'
-import Footer from '../../components/Footer/footer'
-import HomeCategories from '../../components/Categories/HomeCategories'
+import React from "react";
+import BannerSlider from "../../components/Banners/BannerSlider";
+import HomeCategories from "../../components/Categories/HomeCategories";
+import Footer from "../../components/Footer/footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Product_Sidebar from "../../components/Products/Product_Sidebar";
 
 const Home = () => {
   return (
-    <div>
-      <Navbar/>
-      <BannerSlider/>
-      <HomeCategories/>
-      Home
-      <Footer/>
-      </div>
-  )
-}
+    <div
+      // style={{
+      //   background:
+      //     "linear-gradient(90deg, #FF9933 -0%, #FFFFFF 40%, #128807 50%)",
+      // }}
+    >
+      <Navbar />
+      <BannerSlider />
+      <HomeCategories />
+      <Product_Sidebar />
+      <Footer />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
