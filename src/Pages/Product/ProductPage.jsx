@@ -5,8 +5,9 @@ import book1 from "../../assets/book1.jpg";
 import demobook from "../../assets/demobook.png";
 import demobook1 from "../../assets/demobook1.png";
 import Navbar from "../../components/Navbar/Navbar";
-// import ProductsSlider from "../../COMPONENTS/Product/ProductsSlider";
+// import ProductSlider from "../../components/Products/ProductSlider";
 import "./productpage.css";
+import"../../App.css"
 import Footer from "../../components/Footer/footer";
 const ProductPage = () => {
   const { prodid } = useParams();
@@ -69,7 +70,7 @@ const ProductPage = () => {
           ProductReviews: [
             {
               ReviewId: 1,
-              Name: "Harshal Jain",
+              Name: "Sonal",
               Email: "",
               Rating: 5,
               Date: "2021-08-01",
@@ -87,7 +88,7 @@ const ProductPage = () => {
             },
             {
               ReviewId: 3,
-              Name: "Harshal Jain",
+              Name: "Ramendra ",
               Email: "",
               Rating: 4,
               Date: "2021-08-01",
@@ -1165,10 +1166,10 @@ const ProductPage = () => {
       </div>
 
       {/* <div className="slidercont">
-        <ProductsSlider products={products} categoryname="Related Products" />
+        <ProductSlider products={products} categoryname="Related Products" />
       </div>
       <div className="slidercont">
-        <ProductsSlider products={products} categoryname="Explore More" />
+        <ProductSlider products={products} categoryname="Explore More" />
       </div> */}
       <Footer/>
     </div>

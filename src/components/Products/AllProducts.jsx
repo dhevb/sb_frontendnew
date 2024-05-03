@@ -1,5 +1,5 @@
 import React from "react";
-import "./allproduct.css"
+import "./allproduct.css";
 import ProductCard from "./ProductCard";
 import book1 from "../../assets/book1.jpg";
 import book3 from "../../assets/book3.jpg";
@@ -10,7 +10,7 @@ import diya from "../../assets/diya.png";
 import diya1 from "../../assets/diya1.jpg";
 import diya2 from "../../assets/diya2.jpg";
 import viskitbook from "../../assets/viskitbook.jpg";
-import herbalproduct from "../../assets/herbalproduct.png"
+import herbalproduct from "../../assets/herbalproduct.png";
 const AllProducts = () => {
   const products = [
     {
@@ -98,19 +98,12 @@ const AllProducts = () => {
     <div className="allproducts">
       <h1>All Products</h1>
       <div className="products">
-        {
-         products.map((item)=>{
-          return(
-            <ProductCard data={item} key={item.id}/>
-          )
-         }) 
-        }
-
+        {products.map((item) => {
+          return <ProductCard data={item} key={item.id} />;
+        })}
       </div>
-
-
     </div>
-  )
+  );
 };
 
 export default AllProducts;

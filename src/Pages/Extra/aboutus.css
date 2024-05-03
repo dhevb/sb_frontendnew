@@ -1,0 +1,125 @@
+.maindiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.pgleft {
+  display: flex;
+  margin-top: 5px;
+}
+.pgright {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+}
+.pgright p{
+  padding: 16px;
+  /* justify-content: center; */
+  text-align: center
+}
+.pgleft h1{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.pgleft p{
+  padding: 16px;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.pgleft img {
+  padding: 10px;
+  margin-top: 20px;
+  height: 50vh;
+  width: 60%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+.pgright img {
+  padding: 10px;
+  height: 50vh;
+  width: 60%;
+  margin-right: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.pgright h1{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.pgaboutus {
+  display: flex;
+  /* margin: 10px 20px; */
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+}
+.pgaboutus p{
+  padding: 16px;
+  /* justify-content: center; */
+  text-align: center
+}
+.pgaboutus img {
+  height: 50vh;
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.pgaboutus {
+  margin-bottom: 20px;
+}
+.pgaboutus h1{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.features {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.features p{
+  padding: 16px;
+  /* justify-content: center; */
+  text-align: center
+}
+.features li{
+  text-align: left;
+  /* letter-spacing: ; */
+}
+.features img {
+  height: 50vh;
+  width: 60%;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;;
+}
+.features h1{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.futurescope {
+  display: flex;
+}
+.futurescope p{
+  padding: 16px;
+  /* justify-content: center; */
+  text-align: center
+}
+.futurescope li{
+  text-align: left;
+}
+.futurescope img {
+  padding: 10px;
+  margin-top: 70px;
+  height: 50vh;
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.futurescope h1{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
