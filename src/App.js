@@ -7,6 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 import ProductPage from './Pages/Product/ProductPage';
 import Aboutus from './Pages/Extra/Aboutus';
 import Contact from './Pages/Extra/Contact';
+import Login from './Pages/Auth/Login';
+import Signup from './Pages/Auth/Signup';
+import ForgotPassword from './Pages/Auth/ForgotPassword';
 
 
 function App() {
@@ -21,6 +24,12 @@ function App() {
         }/>
         <Route path='/aboutus' element={<Aboutus/>}/>
         <Route path='/contactus' element={<Contact/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/forgotpassword' element={<ForgotPassword/>}/>
+
+
+
       <Route path ="*" element={<div>
         <h1>404 Not found</h1>
       </div>} />

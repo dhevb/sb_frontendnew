@@ -23,7 +23,7 @@ nav .s1 {
 }
 
 nav img {
-  width: 150px;
+  width: 140px;
 }
 
 nav .searchbar {
@@ -75,6 +75,7 @@ nav .cart {
   justify-content: space-between;
   gap: 10px;
   align-items: center;
+  margin-left: -10px;
   position: relative;
   margin: 0px 20px;
 }
