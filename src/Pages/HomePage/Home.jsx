@@ -13,7 +13,7 @@ const Home = () => {
       //     "linear-gradient(90deg, #FF9933 -0%, #FFFFFF 40%, #128807 50%)",
       // }}
     >
-      <Navbar />
+      <Navbar reloadnavbar={false}/>
       <BannerSlider />
       <HomeCategories />
       <Product_Sidebar />

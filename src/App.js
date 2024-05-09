@@ -10,6 +10,7 @@ import Contact from './Pages/Extra/Contact';
 import Login from './Pages/Auth/Login';
 import Signup from './Pages/Auth/Signup';
 import ForgotPassword from './Pages/Auth/ForgotPassword';
+import Cart from './Pages/Cart/Cart';
 
 
 function App() {
@@ -27,8 +28,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/forgotpassword' element={<ForgotPassword/>}/>
-
-
+        <Route path='/cart' element={<Cart/>}/>
 
       <Route path ="*" element={<div>
         <h1>404 Not found</h1>

@@ -2,6 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../components/Navbar/Navbar'
+import forgotpassword from "../../assets/forgotpassword.jpg"
 import './authpage.css'
 const ForgotPassword = () => {
     return (
@@ -9,7 +10,7 @@ const ForgotPassword = () => {
             <Navbar reloadnavbar={false}/>
 
             <div className='authcont'>
-                <img src='https://images.unsplash.com/photo-1495480137269-ff29bd0a695c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80'
+                <img src={forgotpassword}
                     alt='signup' />
 
                 <form className='authform'>

@@ -8,7 +8,7 @@ import "./aboutus.css";
 const Aboutus = () => {
   return (
     <div className="maindiv">
-      <Navbar />
+      <Navbar reloadnavbar={false}/>
       <SingleBanner heading="About Us" bannerImage={coverphoto} />
       <div className="pgleft">
         <img

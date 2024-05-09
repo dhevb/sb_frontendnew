@@ -566,6 +566,7 @@ const ProductPage = () => {
       ],
     },
   ];
+  
   const [reloadnavbar, setreloadnavbar] = React.useState(false);
   const addtocart = () => {
     let cart = JSON.parse(localStorage.getItem("cart"));
