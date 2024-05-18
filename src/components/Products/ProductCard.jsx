@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "./productcard.css";
 import { Link } from "react-router-dom";
-import { toast } from 'react-toastify'
+import "./productcard.css";
 
 const ProductCard = ({ data }) => {
   const [show, setshow] = useState(false);
@@ -52,7 +51,7 @@ const ProductCard = ({ data }) => {
       localStorage.setItem("cart", JSON.stringify(cart));
     }
     // setreloadnavbar(!reloadnavbar);
-    window.location.reload()
+    window.location.reload();
     // toast.success("Item added to cart");
   };
   return (
@@ -101,9 +100,7 @@ const ProductCard = ({ data }) => {
         </div>
       ) : (
         <div className="addbtn">
-          <Link
-            to={`/product/${data.id}`}
-          >
+          <Link to={`/product/₹{data.id}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

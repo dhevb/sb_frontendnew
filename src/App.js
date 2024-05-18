@@ -10,7 +10,9 @@ import Contact from './Pages/Extra/Contact';
 import Login from './Pages/Auth/Login';
 import Signup from './Pages/Auth/Signup';
 import ForgotPassword from './Pages/Auth/ForgotPassword';
+import UserProfile from "./Pages/User/UserProfile"
 import Cart from './Pages/Cart/Cart';
+import PageNotFound from './Pages/Extra/PageNotFound';
 
 
 function App() {
@@ -27,12 +29,11 @@ function App() {
         <Route path='/contactus' element={<Contact/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
+        <Route path='/user/:activepage' element={<UserProfile/>} />
         <Route path='/forgotpassword' element={<ForgotPassword/>}/>
         <Route path='/cart' element={<Cart/>}/>
 
-      <Route path ="*" element={<div>
-        <h1>404 Not found</h1>
-      </div>} />
+      <Route path ="*" element={<PageNotFound/>} />
     </Routes>
     </BrowserRouter>
   );
