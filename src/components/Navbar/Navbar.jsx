@@ -178,11 +178,11 @@ const Navbar = ({ reloadnavbar }) => {
                                 </Dropdown.Menu>
                             </Dropdown></li>
 
-                            <li> <Link to='/about' className='stylenone'>
+                            <li> <Link to='/aboutus' className='stylenone'>
                                 <a>About Us</a>
                             </Link></li>
 
-                            <li> <Link to='/contact' className='stylenone'>
+                            <li> <Link to='/contactus' className='stylenone'>
                                 <a>Contact Us</a>
                             </Link></li>
 
