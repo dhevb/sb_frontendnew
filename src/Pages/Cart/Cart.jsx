@@ -479,7 +479,7 @@ const Cart = () => {
           </div>
         )}
 
-        {active == 2 && (
+        {active === 2 && (
           <div className="shippingcont">
             <div className="selectdate">
               <h2 className="mainhead1">Select Delivery Date</h2>
@@ -596,7 +596,7 @@ const Cart = () => {
         )}
 
         {/* CART BUTTONS */}
-        {active == 1 && cartdata.length > 0 && (
+        {active === 1 && cartdata.length > 0 && (
           <div className="btns">
             <button
               className="nextbtn"
@@ -609,7 +609,7 @@ const Cart = () => {
           </div>
         )}
 
-        {active == 2 && (
+        {active === 2 && (
           <div className="btns">
             <button
               className="backbtn"
@@ -630,7 +630,7 @@ const Cart = () => {
           </div>
         )}
 
-        {active == 3 && (
+        {active === 3 && (
           <div className="btns">
             <button
               className="backbtn"
@@ -650,7 +650,7 @@ const Cart = () => {
             </button>
           </div>
         )}
-        {active == 4 && (
+        {active === 4 && (
           <div className="btns">
             {/* <button className='backbtn'
               onClick={() => {

@@ -39,7 +39,7 @@ const HomeCategories = () => {
       <div className="containers">
         <img src={viskitbook} alt="book" />
         <div className="contents">
-          <h1>Viksit Bharat Book</h1>
+          <h1>Viksit Bharat Journal</h1>
           <p></p>
         </div>
       </div>

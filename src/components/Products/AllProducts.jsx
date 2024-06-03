@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./allproduct.css";
 import ProductCard from "./ProductCard";
 import book1 from "../../assets/book1.jpg";
@@ -16,6 +16,7 @@ import demobook from "../../assets/demobook.png";
 import demobook1 from "../../assets/demobook1.png";
 import herbalproduct1 from "../../assets/herbalproduct1.png";
 import herbalproduct2 from "../../assets/herbalproduct2.png";
+import axios from 'axios';
 
 const AllProducts = () => {
   const products = [
@@ -845,14 +846,36 @@ const AllProducts = () => {
       ],
     },
   ];
+  const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+  useEffect(()=>{
+    const fetchData = async () => {
+      try {
+          const response = await axios.get('https://swadeshi-bazaar-backend.vercel.app/products/');
+          setData(response.data);
+          console.log(data);
+          setLoading(false);
+      } catch (err) {
+          setError(err);
+          setLoading(false);
+      }
+  };
+  fetchData();
+  },[])
   return (
     <div className="allproducts">
       <h1>All Products</h1>
+      {loading && 
+    <div>loading...</div>
+      }
+      {!loading && 
       <div className="products">
         {products.map((item, index) => {
           return <ProductCard data={item} key={index} />;
         })}
       </div>
+}
     </div>
   );
 };
