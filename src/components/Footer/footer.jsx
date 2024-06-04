@@ -17,18 +17,18 @@ import insta from "../../assets/insta.png";
 import twitter from "../../assets/twitter.png";
 import { Link } from "react-router-dom";
 
+import './footer.css'
+
 export default function Footer() {
   return (
-    <div>
-      {/*  <!--Footer--> */}
-      <footer className="bg-neutral-200 text-center text-black lg:text-left shadow-lg">
+    <div className="bg-neutral-200 text-center text-black lg:text-left shadow-lg mt-auto">
+      <footer>
         {/* dhe's logos */}
         <div className="flex items-center bg-white justify-center  border-b-2 border-gray-700   text-center  p-2 lg:justify-between">
           <div className="ml-2 hidden lg:block semi-bold text-black border-collapse">
             <span>Department of Holistic Education</span>
           </div>
           {/* logos */}
-          {/* dhe */}
           <div className="flex justify-center ">
             <a
               href="https://www.dhe.org.in/"
@@ -37,7 +37,6 @@ export default function Footer() {
             >
               <img src={dhe} alt="dhe" className="h-10 w-10 mr-4" />
             </a>
-            {/* rase */}
             <a
               href="https://www.rase.co.in/"
               target="_blank"
@@ -45,7 +44,6 @@ export default function Footer() {
             >
               <img src={rase} alt="rase" className="h-10 w-10 mr-4" />
             </a>
-            {/* VIDHYA BHARTI */}
             <a
               href="https://vidyabharti.net/"
               target="_blank"
@@ -53,7 +51,6 @@ export default function Footer() {
             >
               <img src={vidyabharti} alt="vidya" className="h-10 w-10 mr-4" />
             </a>
-            {/* sarvatr */}
             <a
               href="https://www.sarvatr.co.in/"
               target="_blank"
@@ -61,7 +58,6 @@ export default function Footer() {
             >
               <img src={sarvatr} alt="sarvatr" className="h-10 w-10 mr-4" />
             </a>
-            {/* temple */}
             <a
               href="https://www.alltemples.org.in/"
               target="_blank"
@@ -73,7 +69,6 @@ export default function Footer() {
                 className="h-10 w-10 mr-4"
               />
             </a>
-            {/* job360 */}
             <a
               href="https://jobs360degree.com/"
               target="_blank"
@@ -81,8 +76,6 @@ export default function Footer() {
             >
               <img src={job360} alt="job" className="h-10 w-10 mr-4" />
             </a>
-
-            {/* poojawala */}
             <a
               href="https://poojawala.in/"
               target="_blank"
@@ -90,8 +83,6 @@ export default function Footer() {
             >
               <img src={poojawaala} alt="pooja" className="h-10 w-10 mr-4" />
             </a>
-
-            {/* swadeshi bazar */}
             <a href="" target="_blank" rel="noopener noreferrer">
               <img
                 src={swadeshi}
@@ -99,8 +90,6 @@ export default function Footer() {
                 className="h-10 w-10 mr-4"
               />
             </a>
-
-            {/* tredul */}
             <a
               href="https://tredul.in/"
               target="_blank"
@@ -108,8 +97,6 @@ export default function Footer() {
             >
               <img src={tredul} alt="tredul" className="h-10 w-10 mr-4" />
             </a>
-
-            {/* itr */}
             <a
               href="https://www.itrchandigarh.org/"
               target="_blank"
@@ -117,8 +104,6 @@ export default function Footer() {
             >
               <img src={itr} alt="itr" className="h-10 w-10 mr-4" />
             </a>
-
-            {/* vikas india  */}
             <a
               href="https://vi.rase.co.in/"
               target="_blank"
@@ -126,8 +111,6 @@ export default function Footer() {
             >
               <img src={vikasindia} alt="vikas" className="h-10 w-10 mr-4" />
             </a>
-
-            {/*  */}
           </div>
         </div>
 
@@ -135,62 +118,46 @@ export default function Footer() {
         <div className="mx-6 py-6 text-center md:text-left">
           <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {/* <!-- Help section --> */}
-            <div className=" hidden lg:block pl-10">
-              <h6 className="mb-3 flex justify-center font-semibold uppercase md:justify-start text-black ">
-                Help
-              </h6>
-              <p className="mb-3">
-                <a className="text-black " href="">
-                  Help Center
-                </a>
-              </p>
-              <p className="mb-3">
-                <a className="text-black " href="">
-                  Support
-                </a>
-              </p>
-              <p className="mb-3">
-                <a className="text-black " href="">
-                  Contact Us
-                </a>
-              </p>
-              <p className="mb-3">
-                <a className="text-black " href="">
-                  FAQs
-                </a>
-              </p>
-              <p>
-                <a className="text-black " href="">
-                  Team
-                </a>
-              </p>
-            </div>
+              <div className=" hidden lg:block pl-10">
+                <h6 className="mb-3 flex justify-center font-semibold uppercase md:justify-start text-black ">
+                  Help
+                </h6>
+                <p className="mb-3">
+                  <a className="text-black " href="">
+                    Contact Us
+                  </a>
+                </p>
+                <p className="mb-3">
+                  <a className="text-black " href="">
+                    FAQs 
+                  </a>
+                </p>
+                <p>
+                  <a className="text-black " href="">
+                    Team
+                  </a>
+                </p>
+              </div>
 
             {/* <!-- Useful links section --> */}
-            {/* hidden in sm */}
             <div className=" hidden lg:block pl-10">
               <h6 className="mb-3 flex justify-center font-semibold uppercase md:justify-start text-black ">
                 Swadeshi Bazzar
               </h6>
-              <p className="mb-3">
-                {/* <a className="text-black " href="">
-                    Event Status
-                  </a> */}
-              </p>
-              <p className="mb-3">
-                {/* <a className="text-black ">Booking Status</a>  */}
-              </p>
+              <p className="mb-3"></p>
+              <p className="mb-3"></p>
               <p>
-                <a className="text-black ">About</a>
+                <Link to="/aboutus">
+                <a className="text-black ">About Us</a>
+                </Link>
               </p>
             </div>
+
             {/* <!-- Contact section --> */}
             <div>
               <div className=" md:w-48 lg:w-64 pl-4 pr-4">
                 <h6 className="mb-3 flex justify-center font-semibold uppercase md:justify-start text-black ">
-                  <Link to="/contactus">
                     <span>Contact Us</span>
-                  </Link>
                 </h6>
                 <form className="max-w-lg mx-auto">
                   <div className="mb-0">
@@ -234,34 +201,25 @@ export default function Footer() {
             </div>
 
             {/* follow us and map*/}
-
             <div className=" ">
               {/* follow us */}
               <h6 className="mb-3 flex justify-center font-semibold uppercase md:justify-start text-black">
                 Follow Us
               </h6>
-              {/* social meia icon */}
               <div className=" flex items-center justify-center md:justify-start">
-                {/* facebook */}
                 <a className="mr-6 text-black dark:text-neutral-200">
                   <img src={facebook} alt="Facebook" className="h-5 w-5" />
                 </a>
-                {/* twitter */}
                 <a className="mr-6 text-black dark:text-neutral-200">
                   <img src={twitter} alt="twitter" className="h-5 w-5" />
                 </a>
-                {/* instagrma */}
                 <a className="mr-6 text-black dark:text-neutral-200">
                   <img src={insta} alt="instagram" className="h-5 w-5" />
                 </a>
-                {/* linkedin */}
                 <a className="mr-6 text-black dark:text-neutral-200">
                   <img src={linkedin} alt="linkedin" className="h-5 w-5" />
                 </a>
               </div>
-
-              {/* include map */}
-
               <div className="mt-6  flex items-center justify-center md:justify-start ">
                 <iframe
                   className="w-40 h-28 border border-gray-400"
@@ -285,8 +243,6 @@ export default function Footer() {
               Department of Holistic Education.
             </a>
           </span>
-
-          <div></div>
         </div>
       </footer>
     </div>

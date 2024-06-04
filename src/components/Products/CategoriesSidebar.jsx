@@ -4,6 +4,7 @@ import book1 from "../../assets/book1.jpg";
 import cycle2 from "../../assets/cycle2.jpg";
 import herbalproduct from "../../assets/herbalproduct.png";
 import diya from "../../assets/diya.png";
+import viksitbook from "../../assets/viskitbook.jpg"
 
 const CategoriesSidebar = () => {
   const data = [
@@ -26,6 +27,11 @@ const CategoriesSidebar = () => {
       id: 4,
       categoryimage: diya,
       categoryname: "Shurbhi Diya",
+    },
+    {
+      id: 5,
+      categoryimage:viksitbook,
+      categoryname:"Journals",
     },
   ];
   return (
