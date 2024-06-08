@@ -22,7 +22,7 @@ const AllProducts = () => {
   const products = [
     {
       ProductId: 1,
-      ProductName: "Book",
+      ProductName: "Role of Academic-Driven Startups in Economy",
       ProductDescription:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       ProductImage: [
@@ -97,7 +97,7 @@ const AllProducts = () => {
     },
     {
       ProductId: 2,
-      ProductName: "Books",
+      ProductName: "Recent Advances in School Education",
       ProductDescription:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       ProductImage: [
@@ -172,7 +172,7 @@ const AllProducts = () => {
     },
     {
       ProductId: 3,
-      ProductName: "Books",
+      ProductName: "Siksha MahaKumbh",
       ProductDescription:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       ProductImage: [
@@ -247,7 +247,7 @@ const AllProducts = () => {
     },
     {
       ProductId: 4,
-      ProductName: "Cycle",
+      ProductName: "E-Cycle",
       ProductDescription:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       ProductImage: [
@@ -274,8 +274,8 @@ const AllProducts = () => {
       ProductMaterial: "Material 1",
       ProductQuantity: 10,
       ProductUnit: "Unit 1",
-      ProductPrice: 100,
-      SalesPrice: 80,
+      ProductPrice: 40000,
+      SalesPrice: 38000,
       ProductDiscount: 20,
       ProductDiscountType: "Percentage",
       ProductTax: 20,
@@ -328,11 +328,11 @@ const AllProducts = () => {
       ProductImage: [
         {
           id: 1,
-          image: cycle1,
+          image: cycle2,
         },
         {
           id: 2,
-          image: cycle2,
+          image: cycle1,
         },
         {
           id: 3,
@@ -349,8 +349,8 @@ const AllProducts = () => {
       ProductMaterial: "Material 1",
       ProductQuantity: 10,
       ProductUnit: "Unit 1",
-      ProductPrice: 100,
-      SalesPrice: 80,
+      ProductPrice: 40000,
+      SalesPrice: 38000,
       ProductDiscount: 20,
       ProductDiscountType: "Percentage",
       ProductTax: 20,
@@ -397,7 +397,7 @@ const AllProducts = () => {
     },
     {
       ProductId: 6,
-      ProductName: "Shurbhi Diya",
+      ProductName: "Gobar Diya",
       ProductDescription:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       ProductImage: [
