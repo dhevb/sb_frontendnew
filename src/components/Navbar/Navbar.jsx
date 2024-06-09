@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Dropdown } from "react-bootstrap";
-import { Link, Router, useRoutes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../App.css";
 import logo from "../../assets/logo.png";
 import "./navbar.css";
@@ -25,12 +25,12 @@ const Navbar = ({ reloadnavbar }) => {
   }, [reloadnavbar]);
 
   const [shows3, setshows3] = useState(false);
-// const router = use
+  // const router = use
   return (
     <nav>
       <div className="s1">
         <Link to="/">
-        <img src={logo} alt="logo" className="logo"/>
+          <img src={logo} alt="logo" className="logo" />
         </Link>
 
         <div className="searchbar">
@@ -97,7 +97,9 @@ const Navbar = ({ reloadnavbar }) => {
             <Dropdown.Menu>
               <Dropdown.Item href="/login">Login</Dropdown.Item>
               <Dropdown.Item href="/signup">Signup</Dropdown.Item>
-              <Dropdown.Item href="/user/accountsettings">Profile</Dropdown.Item>
+              <Dropdown.Item href="/user/accountsettings">
+                Profile
+              </Dropdown.Item>
               <Dropdown.Item href="#">Logout</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
@@ -113,10 +115,12 @@ const Navbar = ({ reloadnavbar }) => {
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Books</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Herbal Products</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Bicycle</Dropdown.Item>
-            <Dropdown.Item href="#/action-4">Decoration</Dropdown.Item>
+            <Dropdown.Item href="/books">Books</Dropdown.Item>
+            <Dropdown.Item href="/herbalproducts">
+              Herbal Products
+            </Dropdown.Item>
+            <Dropdown.Item href="/bicycle">Bicycle</Dropdown.Item>
+            <Dropdown.Item href="/decoration">Decoration</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         <Link to="/aboutus">
@@ -131,9 +135,11 @@ const Navbar = ({ reloadnavbar }) => {
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">FAQ</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Privacy Policy</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Terms & Condition</Dropdown.Item>
+            <Dropdown.Item href="/FAQ">FAQ</Dropdown.Item>
+            <Dropdown.Item href="/privacypolicy">Privacy Policy</Dropdown.Item>
+            <Dropdown.Item href="/termsandcondition">
+              Terms & Condition
+            </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </div>
@@ -193,7 +199,6 @@ const Navbar = ({ reloadnavbar }) => {
                 Home
               </Link>
             </li>
-
             <li>
               <Dropdown>
                 <Dropdown.Toggle variant="" id="dropdown-basic">
@@ -201,12 +206,12 @@ const Navbar = ({ reloadnavbar }) => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Books</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
+                  <Dropdown.Item href="/books">Books</Dropdown.Item>
+                  <Dropdown.Item href="herbalproducts">
                     Herbal Products{" "}
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Bicycle</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Decoration</Dropdown.Item>
+                  <Dropdown.Item href="/bicycle">Bicycle</Dropdown.Item>
+                  <Dropdown.Item href="/decoration">Decoration</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </li>
@@ -285,7 +290,7 @@ const Navbar = ({ reloadnavbar }) => {
                   <Dropdown.Item href="/privacypolicy">
                     Privacy Policy
                   </Dropdown.Item>
-                  <Dropdown.Item href="/termsandconditions">
+                  <Dropdown.Item href="/termsandcondition">
                     Terms & Conditions
                   </Dropdown.Item>
                 </Dropdown.Menu>
@@ -296,8 +301,8 @@ const Navbar = ({ reloadnavbar }) => {
       ) : (
         <div className="s3">
           <div className="s31">
-          <Link to="/">
-            <img src={logo} alt="logo" className="logo" />
+            <Link to="/">
+              <img src={logo} alt="logo" className="logo" />
             </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -123,3 +123,30 @@
   margin-top: 20px;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .pgleft, .pgright, .pgaboutus, .features, .futurescope {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pgleft img, .pgright img, .pgaboutus img, .features img, .futurescope img {
+    width: 80%;
+    height: auto;
+  }
+  
+  .pgright img {
+    margin-right: 0;
+  }
+  
+  .pgleft h1, .pgright h1, .pgaboutus h1, .features h1, .futurescope h1 {
+    margin-top: 10px;
+  }
+
+  .pgleft p, .pgright p, .pgaboutus p, .features p, .futurescope p {
+    padding: 10px;
+  }
+
+  .futurescope img {
+    margin-top: 20px;
+  }
+}

@@ -4,6 +4,7 @@ import book1 from "../../assets/book1.jpg";
 import cycle2 from "../../assets/cycle2.jpg";
 import herbalproduct from "../../assets/herbalproduct.png";
 import diya from "../../assets/diya.png";
+import diya2 from "../../assets/diya2.jpg"
 import viksitbook from "../../assets/viskitbook.jpg"
 
 const CategoriesSidebar = () => {
@@ -33,6 +34,11 @@ const CategoriesSidebar = () => {
       categoryimage:viksitbook,
       categoryname:"Journals",
     },
+    {
+      id:6,
+      categoryimage:diya2,
+      categoryname:"Gulak",
+    }
   ];
   return (
     <div className="categorysidebar">
