@@ -24,7 +24,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://swadeshi-bazaar-backend.vercel.app//auth/login', formData);
+            const response = await axios.post('https://swadeshi-bazaar-backend.vercel.app/auth/login', formData);
             // Handle successful response, e.g., redirect to homepage or dashboard
             console.log('Login successful:', response.data);
             navigate('/'); // Navigate to the home page

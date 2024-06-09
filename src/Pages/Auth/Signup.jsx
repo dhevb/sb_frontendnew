@@ -23,7 +23,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://swadeshi-bazaar-backend.vercel.app//auth/signup', formData);
+            const response = await axios.post('https://swadeshi-bazaar-backend.vercel.app/auth/signup', formData);
             // Handle successful response, e.g., show a success message or redirect
             console.log('Signup successful:', response.data);
             

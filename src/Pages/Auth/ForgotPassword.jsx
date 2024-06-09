@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://swadeshi-bazaar-backend.vercel.app//forgotpassword', { email });
+            const response = await axios.post('https://swadeshi-bazaar-backend.vercel.app/forgotpassword', { email });
             // Handle successful response, e.g., show a success message or navigate to another page
             console.log('Forgot password email request successful:', response.data);
            // Navigate to a verification or success page
