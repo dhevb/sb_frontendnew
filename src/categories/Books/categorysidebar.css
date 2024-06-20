@@ -1,46 +1,71 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
 }
 
-.App {
-  display: flex;
-}
-
-.sidebar {
-  margin-top: 10%;
-  width: 250px;
-  background-color: #f4f4f4;
-  padding: 15px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar h2 {
-  text-align: center;
-  font-size: 1.5em;
-  color: #333;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin: 10px 0;
-}
-
-.sidebar ul li a {
-  text-decoration: none;
-  color: #007bff;
-  font-size: 1.2em;
-}
-
-.sidebar ul li a:hover {
-  color: #0056b3;
-}
-
-.content {
-  flex-grow: 1;
+.card-container {
   padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.card-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 200px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: var(--col1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .card {
+    width: 180px; /* Slightly smaller width for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 160px; /* Smaller width for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 140px; /* Smaller width for large phones */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%; /* Full width for small phones */
+    padding: 15px; /* Further reduce padding */
+  }
+  .card-grid {
+    gap: 10px; /* Reduce gap between cards */
+  }
 }

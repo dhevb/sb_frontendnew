@@ -123,19 +123,18 @@ export default function Footer() {
                   Help
                 </h6>
                 <p className="mb-3">
+                  <Link to="/contactus">
                   <a className="text-black " href="">
                     Contact Us
                   </a>
+                  </Link>
                 </p>
                 <p className="mb-3">
+                  <Link to="/FAQ">
                   <a className="text-black " href="">
                     FAQs 
                   </a>
-                </p>
-                <p>
-                  <a className="text-black " href="">
-                    Team
-                  </a>
+                  </Link>
                 </p>
               </div>
 
